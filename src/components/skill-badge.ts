@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 
@@ -103,7 +103,7 @@ export class SkillBadge extends LitElement {
   @property({ type: Boolean })
   clickable: boolean = false;
 
-  render(): unknown {
+  render(): TemplateResult {
     const classes = {
       badge: true,
       [this.level]: true,

@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 /**
@@ -127,7 +127,7 @@ export class ProfileCard extends LitElement {
   @property({ type: Boolean })
   clickable: boolean = false;
 
-  render(): unknown {
+  render(): TemplateResult {
     return html`
       <div
         class="container"
